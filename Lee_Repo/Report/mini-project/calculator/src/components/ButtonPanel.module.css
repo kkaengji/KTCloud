@@ -1,0 +1,49 @@
+/* c:\Users\kkaeng\Desktop\kt cloud\report\mini-project\calculator\src\components\ButtonPanel.module.css */
+.buttonPanel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.button {
+  font-size: 1.8rem; /* 버튼 글자 크기를 키웠습니다 */
+  padding: 15px; /* 패딩을 줄여 세로 길이를 조절합니다 */
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+}
+
+/* 연산자 버튼 (+, -, *, /, %) */
+.operator {
+  background-color: #fadadd; /* 파스텔 핑크 */
+  color: #d14d72;
+  font-weight: bold;
+}
+
+/* 기능 버튼 (C, ←, =) */
+.function {
+  background-color: #fffacd; /* 파스텔 옐로우 */
+  color: #b8860b;
+  font-weight: bold;
+}
+
+/* '=' 버튼은 특별히 강조 */
+.equals {
+  grid-column: span 2;
+  background-color: #ffb6c1; /* 조금 더 진한 핑크 */
+  color: white;
+}
