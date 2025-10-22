@@ -2,6 +2,7 @@
   "name": "calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kkaengji.github.io/KTCloud/calculator",
   "dependencies": {
     "@fontsource/material-icons": "^5.2.7",
     "@reduxjs/toolkit": "^2.9.0",
@@ -30,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +62,7 @@
     "@types/redux-thunk": "^2.1.32",
     "autoprefixer": "^10.4.21",
     "daisyui": "^4.12.12",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   }

@@ -3,3 +3,6 @@
 #### 참고 git
 
 https://github.com/wapj/jsbackend/tree/main/chapter7/board
+
+> $npm init -y
+> $npm i express mongoose express-handlebars lodash
