@@ -1,0 +1,327 @@
+/* 기본 스타일 및 폰트 설정 */
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fff0f5; /* 연한 핑크 배경 */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 게시판 전체 컨테이너 */
+.board-container {
+  width: 100%;
+  max-width: 1000px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(233, 30, 99, 0.15);
+  border: 1px solid #fce4ec; /* 연한 핑크 테두리 */
+}
+
+/* 게시판 헤더 */
+.board-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f48fb1; /* 핑크색 밑줄 */
+  padding-bottom: 1rem;
+}
+
+.board-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e91e63; /* 메인 핑크 컬러 */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* --- 리스트형 게시판 스타일 --- */
+.list-header {
+  display: flex;
+  width: 100%;
+  background-color: #fce4ec; /* 연한 핑크 배경 */
+  color: #ad1457; /* 진한 핑크 텍스트 */
+  font-weight: 500;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #f48fb1;
+  text-align: center;
+}
+
+.post-list {
+  border-bottom: 2px solid #f48fb1;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #f1f1f1;
+  transition: background-color 0.3s ease;
+  color: #555;
+  text-align: center;
+}
+
+.post-list .post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item:hover {
+  background-color: #fff8fa;
+}
+
+.post-item .item-title {
+  text-align: left;
+  flex-grow: 1;
+  color: #333;
+}
+
+.post-item .item-title a:hover {
+  color: #e91e63;
+  text-decoration: underline;
+}
+
+/* 각 컬럼 너비 조정 */
+.th-title,
+.item-title {
+  flex-grow: 1; /* 제목이 남은 공간을 모두 차지하도록 설정 */
+  text-align: center;
+}
+
+.th-num,
+.item-num {
+  width: 8%;
+  flex-shrink: 0; /* 너비가 줄어들지 않도록 설정 */
+}
+.th-author,
+.item-author {
+  width: 15%;
+  flex-shrink: 0;
+}
+.th-date,
+.item-date {
+  width: 15%;
+  flex-shrink: 0;
+}
+.th-views,
+.item-views {
+  width: 10%;
+  flex-shrink: 0;
+}
+
+/* 게시판 하단 (페이지네이션, 글쓰기 버튼) */
+.board-footer {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-controls {
+  justify-self: start;
+}
+
+.view-options {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.view-options select {
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #fce4ec;
+  font-family: inherit;
+  color: #ad1457;
+  cursor: pointer;
+}
+
+/* 페이지네이션 */
+.pagination {
+  display: flex;
+  gap: 6px;
+  justify-self: center;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #fff;
+  color: #e91e63;
+  border: 1px solid #fce4ec;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+  background: #fce4ec;
+  color: #ad1457;
+  border-color: #f8bbd0;
+}
+
+.pagination a.active {
+  background: #e91e63;
+  color: #fff;
+  border-color: #e91e63;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* 글쓰기 버튼 */
+.write-btn {
+  justify-self: end;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #e91e63;
+  border: 1px solid #e91e63;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(233, 30, 99, 0.2);
+  transition: all 0.3s ease;
+}
+
+.write-btn:hover {
+  background: #d81b60;
+  box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+  transform: translateY(-2px);
+}
+
+/* --- 글쓰기 페이지 스타일 --- */
+.write-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ad1457;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f8bbd0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box; /* padding과 border가 너비에 포함되도록 설정 */
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e91e63;
+  box-shadow: 0 0 5px rgba(233, 30, 99, 0.3);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit {
+  color: #fff;
+  background-color: #e91e63;
+  border-color: #e91e63;
+}
+.btn-submit:hover {
+  background-color: #d81b60;
+  border-color: #d81b60;
+}
+
+.btn-cancel {
+  color: #e91e63;
+  background-color: #fff;
+  border-color: #fce4ec;
+}
+.btn-cancel:hover {
+  background-color: #fce4ec;
+}
+
+/* --- 글 보기(view) 페이지 스타일 --- */
+.view-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f48fb1;
+  margin-bottom: 2rem;
+}
+
+.view-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.view-info {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.view-info strong {
+  color: #ad1457;
+}
+
+.view-content {
+  min-height: 200px;
+  padding: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  white-space: pre-wrap; /* 줄바꿈과 공백을 유지 */
+}
+
+.view-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f1f1;
+}
+
+.btn-list {
+  color: #e91e63;
+  background-color: #fff;
+  border-color: #fce4ec;
+}
+.btn-list:hover {
+  background-color: #fce4ec;
+}

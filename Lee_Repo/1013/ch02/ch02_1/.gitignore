@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -22,7 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-=======
-# 의존성 모듈 (Dependency directories)
-**/node_modules/*
->>>>>>> dbfeec733a1571d07e978e8da3af85b2988c0464
