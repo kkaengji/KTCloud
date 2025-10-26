@@ -1,6 +1,9 @@
 # NestJS + MongoDB 게시판 만들기
 
 인증/로그인 기능 없이, CRUD 중심의 핵심 흐름에 따라 서버 렌더링(View Template) 방식의 웹 개발을 수행합니다.
+<img width="1230" height="502" alt="posts" src="https://github.com/user-attachments/assets/4c84ae07-6f6a-4b5c-8568-9266c7210faf" />
+<img width="973" height="636" alt="2" src="https://github.com/user-attachments/assets/7c06d7a1-93c8-4563-8c7d-ac7b2b5dd215" />
+<img width="1020" height="641" alt="3" src="https://github.com/user-attachments/assets/08c74d71-f79e-4aed-90c8-be3449e1cab7" />
 
 ---
 
