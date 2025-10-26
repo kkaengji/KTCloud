@@ -6,8 +6,12 @@
 ---
 
 ## 📸 예시 화면
-
+1. 
 <img width="1230" height="502" alt="posts" src="https://github.com/user-attachments/assets/4c84ae07-6f6a-4b5c-8568-9266c7210faf" />
+
+2. 
+<img width="1020" height="641" alt="3" src="https://github.com/user-attachments/assets/a6d0acc1-b60a-4ddd-951e-a22e745f7f48" />
+
 
 ---
 
