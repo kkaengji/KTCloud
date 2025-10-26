@@ -13,7 +13,7 @@ import { CreatePostDto } from './dto/create-post.dto';
 import { UpdatePostDto } from './dto/update-post.dto';
 import { CreateCommentDto } from './dto/create-comment.dto';
 
-@Controller('posts')
+@Controller('posts') // localhost:3000/posts
 export class PostsController {
   constructor(private readonly postsService: PostsService) {}
 
