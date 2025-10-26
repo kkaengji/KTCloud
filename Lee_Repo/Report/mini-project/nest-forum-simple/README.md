@@ -49,29 +49,7 @@
 ---
 
 ## 📁 폴더 구조 예시
-
-src/
-├─ main.ts
-├─ app.module.ts
-└─ posts/
-├─ posts.module.ts
-├─ posts.controller.ts
-├─ posts.service.ts
-├─ schemas/
-│ └─ post.schema.ts
-└─ dto/
-├─ create-post.dto.ts
-├─ update-post.dto.ts
-└─ create-comment.dto.ts
-
-views/
-├─ layouts/
-│ └─ main.hbs
-└─ posts/
-├─ list.hbs
-└─ detail.hbs
-
-package.json
+<img width="237" height="396" alt="화면 캡처 2025-10-27 040204" src="https://github.com/user-attachments/assets/25fe23a3-41e3-4816-b307-d4d91c721257" />
 
 ---
 
