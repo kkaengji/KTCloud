@@ -1,7 +1,7 @@
 # RESTful API의 정의와 사용 방법
 ### 1. REST ?
 REST(Representational State Transfer)는 2000년 로이 필딩(Roy Fielding)의 박사 논문에서 처음 제시된 아키텍처 스타일이다.  
-REST는 웹의 기본 원리를 따르며, 자원을 URI(Uniform Resource Identifier) 로 구분하고, 자원에 대한 행위를 HTTP 메서드(GET, POST, PUT, DELETE 등)로 표현한다.
+REST는 웹의 기본 원리를 따르며, 자원을 URI로 구분하고, 자원에 대한 행위를 HTTP 메서드(GET, POST, PUT, DELETE 등)로 표현한다.
 
 즉, REST는 "자원 중심(Resource-Oriented)" 접근 방식이며, 이를 기반으로 설계된 API를 **RESTful API**라고 한다.
 
